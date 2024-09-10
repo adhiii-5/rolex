@@ -1,0 +1,262 @@
+
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:rgb(0,96,57);; /* Change this to your desired background color */
+    padding: 30px 20px;
+    box-shadow: 0 2px 4px rgba(162, 4, 4, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.menu {
+    flex: 1;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.menu a:hover{
+    color: #00cc7a;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+ .register a{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+    transition: 0.3s ease;
+    text-decoration: none;
+    padding: 10px;
+}
+.register a:hover{
+    color: #00cc7a;
+}
+ .gallery a{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items:center;
+    gap: 0.5em;
+    transition: 0.3 ease;
+    padding: 10px;
+    text-decoration: none;
+}
+.gallery a:hover{
+    color: #00cc7a;
+}
+ .favourite a{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items:center;
+    gap: 0.5em;
+    text-decoration: none;
+    padding: 10px;
+}
+.favourite a:hover{
+    color: #00cc7a;
+}
+section{
+    color: green;
+}
+p{
+    color:black;
+    font-size: larger;
+}
+aside{
+    margin-left: 900px;
+}
+footer{
+    background-color: #ffffff;
+}
+
+
+
+
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .menu, .logo, ul {
+        flex: 100%;
+        text-align: center;
+    }
+    
+    ul {
+        justify-content: center;
+    }
+    
+    ul li {
+        margin: 10px 0;
+    }
+    
+    .logo img {
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a, ul li a {
+        font-size: 18px;
+    }
+
+    .logo img {
+        max-width: 60px;
+    }
+} */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        flex: 1 1 150px;
+    }
+}
+@media (max-width: 480px) {
+    .menu, .register, .gallery, .favourite {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .gallery img {
+        flex: 1 1 100%;
+    }
+}
+
+.gallery img{width: 1520px;
+}
+@media (max-width: 320px) {
+    .menu, .register, .gallery, .favourite {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .gallery img {
+        flex: 1 1 100%;
+    }
+}
+
+/* Discover More Section */
+.discover-more-section {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.discover-more-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.discover-more-container {
+    position: relative;
+    display: inline-block;
+}
+
+.discover-more-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.discover-more-container:hover .discover-more-image {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover-more-container:hover .overlay {
+    opacity: 1;
+}
+
+.discover-more-link {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discover-more-link:hover {
+    background-color: #fff;
+    color: #000;
+}
+
