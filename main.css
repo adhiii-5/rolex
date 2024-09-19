@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006039;
+    height: 80px;
+    width: 100%; /* Full width */
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2; /* Ensures the header is above the video */
+}
+
+#video1 {
+    width: 100%; /* Full width */
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1; /* Video is behind the text */
+}
+
+#video1text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Center the text */
+    color: white;
+    z-index: 3; /* Text is above the video */
+}
+
+#mainhead1 {
+    font-size: 1.5rem;
+}
+
+#mainhead2 {
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Ensure this matches the header height */
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar .menu-icon {
+    display: flex;
+    align-items: center; /* Center vertically */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Add gap between items */
+}
+
+.navbar .nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-links li img {
+    height: 24px;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+#logo {
+    height: 40px; /* Adjust as needed */
+    margin-right: 20px; /* Space between the logo and the menu items */
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar img {
+    height: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Centering the crown logo */
+.navbar .crown-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px; /* Adjust as needed */
+}
+
+
+/* Collection Overview Section */
+#collection-overview {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.collection-text h2 {
+    color: #006039;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.collection-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.find-rolex-link {
+    color: #006039;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.filter-options {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.filter-link {
+    color: #006039;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.filter-link.active {
+    font-weight: bold;
+}
+
+.configure-button {
+    background-color: #006039;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto; /* Pushes the button to the far right */
+}
+.image1{
+    width: 100%; /* Full width */
+    height: auto;
+    display: block;
+    position: relative;
+    
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+}
+
+#imagetext1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    /* transform: translateY(20px);
+    opacity: 0; */
+    text-align: left; 
+    color: white;
+    z-index: 3; 
+}
+#imagetext2 {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    
+    text-align: left; 
+    color: white;
+    z-index: 3; 
+}
+#imagetext3 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    text-align: left; 
+    color: white;
+    z-index: 3;
+}
+
+@keyframes CSSscrollReveal{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#imagetext1{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+#imagetext2{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+#imagetext3{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+.image2{
+    width: 100%; /* Full width */
+    height: auto;
+    display: block;
+    position: relative;
+    
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+}
+
+#imagetext21 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    /* transform: translateY(20px);
+    opacity: 0; */
+    text-align: left; 
+    color: white;
+    z-index: 3; 
+}
+#imagetext22 {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    
+    text-align: left; 
+    color: white;
+    z-index: 3; 
+}
+#imagetext23 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    text-align: left; 
+    color: white;
+    z-index: 3;
+}
+#imagetext21{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+#imagetext22{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+#imagetext23{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
